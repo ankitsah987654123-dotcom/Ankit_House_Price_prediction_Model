@@ -13,5 +13,6 @@ if st.button("Predict Price"):
     input_data=np.array([[Area,Bedrooms,Age]])
     prediction=model.predict(input_data)
 
-    st.success(f"Estimated House Price:{prediction[0]:2f}Lakhs")
+    st.success(f"Estimated House Price:{prediction[0]:2f}rupees")
 st.subheader("Training Dataset")
+
